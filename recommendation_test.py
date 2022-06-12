@@ -1,8 +1,8 @@
-from capstone_refield import unique_field_id, unique_field_name, model
+from capstone_refield import *
 import numpy as np
 import tensorflow as tf
 
-model.load_weights('/home/harisyf/Documents/Bangkit 2022/Capstone Project/refield_weight')
+model = tf.saved_model.load('/home/harisyf/Documents/Bangkit 2022/Capstone Project/refield-model')
 
 #Recommendation Testing
 # Create array with users id in every place on the length of the field
